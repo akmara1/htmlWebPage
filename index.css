@@ -1,0 +1,128 @@
+#profile{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+
+    box-sizing: border-box;
+    border: 5px white solid;
+    
+    animation-name: my-animation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    
+}
+
+@keyframes my-animation {
+  from{
+    width: 400px;
+    height: 400px;
+  }
+  to{
+    width: 500px;
+    height: 500px;
+  }
+}
+
+#about_text{
+    max-width: 400px;
+    height: 400px;
+    font-size: 22px;
+}
+
+.first_page{
+    display: flex;
+    justify-content: space-around;
+    height: 700px;
+    align-items: center;
+}
+
+
+
+
+.name_wrapper{
+  width: 500px;
+  height: 100vh;
+   display: grid;
+  place-items: center;
+}
+
+
+
+
+.name{
+  color: white;
+  width: 7ch;
+
+  animation-name: typing;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 10em;
+  text-align: center;
+}
+
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+} 
+
+li{
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.list{
+  display: flex;
+  justify-content: space-around;
+}
+
+.hobbies, .skills{
+  font-size: 30px;
+  text-align: center;
+}
+
+.list li img{
+  display: none;
+  width: 400px;
+  height: auto;
+}
+
+.list li:hover img{
+  display: inline;
+  position: relative;
+}
+
+.list li:hover p{
+  display: none;
+
+}
+
+.hobbies{
+  height: 500px;
+}
+
+.skills{
+  height: 300px;
+  align-items: center;
+}
+
+
+
